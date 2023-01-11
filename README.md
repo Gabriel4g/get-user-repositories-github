@@ -1,6 +1,6 @@
 <h1 align="center">🧑‍💻 Get Repositories from Github </h1>
 
-<h2 align="center"> <a href="https://gabriel4g.github.io/get-repositories-from-github">Visit the Project 🏠</a> </h2>
+<h2 align="center"> <a href="https://gabriel4g.github.io/get-user-repositories-github">Visit the Project 🏠</a> </h2>
 
 <h3 align="center">Enter a Github user and see his repositories ⭐</h3>
 

@@ -13,7 +13,7 @@ async function getUserRepositories(user) {
         }
 
         else if(response.status === 404) {
-            alert("Not Found")
+            alert("Not Found");
         }
 
         else {
@@ -68,8 +68,15 @@ async function renderUserRepositories(user) {
         <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
       </svg>`;
         watchersRepository.classList.add("style-watchers-repository");
+
+        const createdRepository = document.createElement("h5");
+        Put_As_Son(cardRepository, createdRepository);
+        createdRepository.textContent = `Created: ${dataJson.created_at.slice(0, 10)}`;
+        createdRepository.classList.add("style-created-repository");
     }
 }
+
+renderUserRepositories("Gabriel4g");
 
 buttonSearch.addEventListener("click", (event) => {
     event.preventDefault();

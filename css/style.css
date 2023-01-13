@@ -7,11 +7,12 @@
 }
 
 body {
+    height: 100%;
     padding: 7rem 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #353b3f;
+    background: #0e091b;
 }
 
 #search-container {
@@ -64,7 +65,7 @@ body {
     gap: 2rem;
     margin-top: 5rem;
     width: 90%;
-    max-width: 90rem;
+    max-width: 120rem;
 }
 
 #repositories-container > .card {
@@ -112,7 +113,7 @@ body {
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: #4486d1;
+    color: #fff;
     border-radius: 5rem;
     padding: .7rem;
     border: 1px solid #8B949E;
@@ -131,4 +132,16 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.style-created-repository {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: .8rem;
+    border: 1px solid #fff;
+    border-radius: 3rem;
 }

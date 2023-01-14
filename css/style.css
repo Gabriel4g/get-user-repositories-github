@@ -55,7 +55,14 @@ body {
 #search-container > img {
     height: 150px;
     border-radius: 50%;
-    margin-top: 2rem;
+}
+
+#search-container > .username-github {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    margin: 1rem 0;
 }
 
 #repositories-container {

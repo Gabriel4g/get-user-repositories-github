@@ -1,5 +1,6 @@
-const inputUser = document.querySelector("#input-user"),
-buttonSearch = document.querySelector("#btn-search"),
+const form = document.querySelector("form#search-container"),
+inputUser = form.querySelector("#input-user"),
+usernameGithub = document.querySelector(".username-github"),
 containerCardsRepositories = document.querySelector("#repositories-container"),
 imageUser = document.querySelector("#image-user");
 
@@ -37,6 +38,7 @@ async function renderUserRepositories(user) {
     .then(res => res.json())
     .then(profileData => {
         imageUser.src = profileData.avatar_url;
+        usernameGithub.textContent = profileData.login;
     })
 
     for(let dataJson of data) {
@@ -78,7 +80,7 @@ async function renderUserRepositories(user) {
 
 renderUserRepositories("Gabriel4g");
 
-buttonSearch.addEventListener("click", (event) => {
+form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     renderUserRepositories(inputUser.value);

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Repositories</title>
+    <title>Get User Repositories</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,9 @@
 
 <body>
     <form id="search-container">
+        <img src="" id="image-user">
+        <h2 class="username-github"></h2>
+
         <input type="text" placeholder="Enter a User" id="input-user" autocomplete="off">
         <button id="btn-search">
             Search
@@ -27,7 +30,6 @@
             </svg>
         </button>
 
-        <img src="" id="image-user">
     </form>
 
     <div id="repositories-container">

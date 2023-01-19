@@ -4,6 +4,6 @@
 
 <h3 align="center">Enter a Github user and see his repositories ⭐</h3>
 
-![Captura de tela de 2023-01-12 22-46-15](https://user-images.githubusercontent.com/92071360/212232780-816e1184-ced3-4e58-9bed-70b0831ae342.png)
+![Captura de tela de 2023-01-14 09-29-05](https://user-images.githubusercontent.com/92071360/212476986-508a92f5-1da7-4351-b0f9-a4c6551a088e.png)
 
 <h2>Developed by <a href="https://instagram.com/gabrielbarrozs">Gabriel</a> 🚀</h2>

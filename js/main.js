@@ -40,6 +40,7 @@ async function renderUserRepositories(user) {
         imageUser.src = profileData.avatar_url;
         usernameGithub.textContent = profileData.login;
     })
+    .catch(err => alert(err.name));
 
     for(let dataJson of data) {
         const cardRepository = document.createElement("a");
@@ -56,6 +57,10 @@ async function renderUserRepositories(user) {
         Put_As_Son(cardRepository, descriptionRepository);
         descriptionRepository.textContent = `${dataJson.description || 'No Description'}`
         descriptionRepository.classList.add("style-description-repository");
+
+        if(!dataJson.description) {
+            descriptionRepository.style.color = "#FF0000";
+        }
 
         const visibilityRepository = document.createElement("h5");
         Put_As_Son(cardRepository, visibilityRepository);
